@@ -8,4 +8,4 @@ Software Engineering Notes
 
 ## Table of contents
 
-- [Bootiful TDD By Josh Long](container_dependency_ioc.md) ( 14 Questions on Exam )
+- [Bootiful TDD By Josh Long](container_dependency_ioc.md)
