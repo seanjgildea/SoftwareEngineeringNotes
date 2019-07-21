@@ -8,9 +8,9 @@
 - We want to move quickly and safely to production, early and often
 
 ## Bob Martins 3 laws of TDD
-1. You are not allowed to write any production code unless it is to make a failing unit test pass.
-2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
-3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
+1. Write production code only to make a failing unit test pass.
+2. Write only enough of a unit test to fail.
+3. Write only enough production code to make the failing unit test pass.
 
 
 ## The goal: Optimize for fast feedback
