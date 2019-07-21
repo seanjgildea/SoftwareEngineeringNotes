@@ -30,4 +30,10 @@
 
 - Prove that the mapping is correct
 - Prove that I can talk to the DB
-- 
+- Prove that I can make queries and the id is not null
+-
+
+## Write an [Class]HTTPTest
+
+- Inject the WebTestClient
+- WebTestClient expects certain responses and statuses
