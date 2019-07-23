@@ -1,7 +1,21 @@
+# AWS Developer Tools
+
+## Top 10 AWS Services
+
+1. EC2
+2. RDS
+3. S3
+4. CloudFront
+5. VPC
+6. SNS
+7. Elastic Beanstalk
+8. Lambda
+9. Auto Scaling
+10. Elasticache
+
 ## AWS CodeDeploy
 
 - Detects problems on first deployed instance and prevents rollout on further EC2 instances
-- 
 
 ## AWS CodeBuild
 
