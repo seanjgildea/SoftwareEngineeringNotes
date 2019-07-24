@@ -1,7 +1,7 @@
-#### https://www.youtube.com/watch?v=E87XhgYBM-Y
+[<< Back to Table of Contents](README.md)
 
 # Bootiful TDD By Josh Long
-
+- https://www.youtube.com/watch?v=E87XhgYBM-Y
 - Desire to stay in the zone / dopamine / video games 
 - In order to take advantage of this fast movement, you need safety
 - We want validation that everytime we introduce a change
