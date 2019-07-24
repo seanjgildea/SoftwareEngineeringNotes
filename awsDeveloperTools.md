@@ -40,3 +40,14 @@
 - CloudFormation
 - ELK
 - Nexus
+
+## AWS Certifications
+
+- https://aws.amazon.com/certification/
+
+- Cloud Practitioner
+- https://aws.amazon.com/training/course-descriptions/cloud-practitioner-essentials/
+- https://aws.amazon.com/certification/certification-prep/
+
+- Practice Tests
+- https://www.awsapprentice.com/
