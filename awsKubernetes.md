@@ -27,6 +27,5 @@
 ## Docs
 
 - https://helm.sh/docs/
-- 
 
 [<< Back to Table of Contents](README.md)
