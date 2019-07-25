@@ -14,7 +14,11 @@
 
 - MQTT ( Machine to Machine ) Push-subscribe messaging - dial up / satellite / low bandwith / high latency / mobile / IT
 
-- AMPQ 
+- AMPQ ( Advanced Message Queuing Protocol ) Reliable / Interoperable . Highly standardized. JP Morgan uses it to process billions of messages a day. 
+
+## AMQP Benefits
+
+- Ability to use different client
 
 
 
