@@ -9,3 +9,5 @@
 - [Managing Kubernetes on AWS](awsKubernetes.md)
 
 - [MongoDB](mongoDB.md)
+
+- [RabbitMQ](rabbitMQ.md)
