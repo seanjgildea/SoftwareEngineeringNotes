@@ -2,6 +2,11 @@
 
 # Rabbit MQ
 
+- Queues are final destinations before being received by subscribers
+- Topics are the subject part of messages
+- Bindings are rules that exchanges use to route messages to queues
+- 
+
 ## Admin Console
 
 - http://localhost:15672/
@@ -18,7 +23,7 @@
 
 ## AMQP Benefits
 
-- Ability to use different client
+- Ability to use different clients
 
 
 
