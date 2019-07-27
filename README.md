@@ -1,6 +1,6 @@
 # Software Engineering Notes :notebook:
 
-### Table of contents :trollface:
+### Table of contents
 
 - [Instances for Design Patterns](onDesignPatterns.md)
 
