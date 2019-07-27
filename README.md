@@ -1,4 +1,4 @@
-# 2019 Software Engineering Notes :notebook:
+# Software Engineering Notes :notebook:
 
 ### Table of contents :trollface:
 
