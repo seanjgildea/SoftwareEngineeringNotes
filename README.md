@@ -2,6 +2,8 @@
 
 ### Table of contents
 
+- [Instances for Design Patterns](onDesignPatterns.md)
+
 - [Bootiful TDD By Josh Long](BootifulTDDByJoshLong.md)
 
 - [AWS Developer Tools](awsDeveloperTools.md)
