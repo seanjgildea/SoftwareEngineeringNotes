@@ -1,4 +1,4 @@
-# Software Engineering Notes :notebook:
+# :notebook: Software Engineering Notes 
 
 ### Table of contents
 
