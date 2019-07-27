@@ -25,5 +25,16 @@
 ## When to consider using the Factory pattern
 
 - When the factory can easily create the entire object within one method call.
+- A class cannot anticipate the type of objects it needs to create beforehand.
+- A class requires its subclasses to specify the objects it creates.
+- You want to localize the logic to instantiate a complex object.
+- Factory methods can be considered as an alternative to constructors - mostly when constructors aren't expressive enough
 
+## When to consider using the Strategy pattern
 
+- When you want to group related algorithms under an abstraction,  which allows switching out one algorithm or policy for another without modifying the client
+
+## When to use the Observer pattern
+
+- When one object changes state, all its dependents have to be notified
+- The pattern consists of two actors, the observer who is interested in the updates and the subject who generates the updates.
