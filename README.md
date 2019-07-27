@@ -14,4 +14,4 @@
 
 - [RabbitMQ](rabbitMQ.md)
 
-- [Markdown Cheatsheet](markdownCheetsheet.md)
+- [Markdown Cheatsheet](markdownCheatsheet.md)
