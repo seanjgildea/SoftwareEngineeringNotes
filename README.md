@@ -1,6 +1,6 @@
-# 2019 Software Engineering Notes
+# 2019 Software Engineering Notes :notebook:
 
-### Table of contents
+### Table of contents :trollface:
 
 - [Instances for Design Patterns](onDesignPatterns.md)
 
