@@ -14,6 +14,9 @@
 ## When to consider using the Builder pattern
 
 > "The builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters." - Joshua Bloch 
+- This pattern is flexible and it is easy to add more parameters to it in the future. 
+- It is really only useful if you are going to have more than 4 or 5 parameters for a constructor. 
+- It might be worthwhile in the first place if you suspect you may be adding more parameters in the future.
 - For 'natural' looking code
 - Pizza pizza = new Pizza.Builder(10).cheese(true).peperoni(true).bacon(true).build();
 - When you want to guarantee that your object can't be constructed in an inconsistent state 
