@@ -13,6 +13,7 @@
 
 ## When to consider using the Builder pattern
 
+> "The builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters." - Joshua Bloch 
 - For 'natural' looking code
 - Pizza pizza = new Pizza.Builder(10).cheese(true).peperoni(true).bacon(true).build();
 - When you want to guarantee that your object can't be constructed in an inconsistent state 
@@ -20,6 +21,6 @@
 
 ## When to consider using the Factory pattern
 
-- 
+- When the factory can easily create the entire object within one method call.
 
 
