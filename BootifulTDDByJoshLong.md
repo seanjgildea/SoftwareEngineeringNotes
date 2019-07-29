@@ -1,5 +1,7 @@
 [<< Back to Table of Contents](README.md)
 
+> "If you are not writing tests, then you are writing legacy code from the get-go" - Bartosz Jedrzejewski
+
 # Bootiful TDD By Josh Long
 - https://www.youtube.com/watch?v=E87XhgYBM-Y
 - Desire to stay in the zone / dopamine / video games 
