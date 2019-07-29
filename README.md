@@ -15,3 +15,5 @@
 - [RabbitMQ](rabbitMQ.md)
 
 - [Markdown Cheatsheet](markdownCheatsheet.md)
+
+- [Java 8 Streams](java8Streams.md)
