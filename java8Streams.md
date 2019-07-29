@@ -31,3 +31,14 @@
                 .map(String::toLowerCase)
                 .filter(x -> x.length() > 4)
                 .forEach(System.out::println);
+
+
+## Import data file, split by commas, filter by rows containing 3 values, filter by 2nd element > 15 and print
+
+            Stream<String> rows = Files.lines(Paths.get("data.txt"));
+        rows
+                .map(x -> x.split(","))
+                .filter(x -> x.length == 3)
+                .filter(x -> Integer.parseInt(x[1]) > 15 )
+                .forEach(x -> System.out.println(x[0] + " " + x[1] + " " + x[2]));
+        rows.close();
