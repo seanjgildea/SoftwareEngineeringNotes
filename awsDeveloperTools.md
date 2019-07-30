@@ -1,8 +1,22 @@
 [<< Back to Table of Contents](README.md)
 
-# AWS Developer Tools
+# AWS Code Pipeline
 
-## Top 10 AWS Services
+- (Source ) AWS CodeCommit - Git
+- (Build) AWS CodeBuild 
+- (Production) AWS CodeDeploy
+- (Monitoring) AWS CodeWatch / AWS X-RAY
+
+
+
+## Deployment and Maintenance
+
+- AWS Elastic Beanstalk - Deploy code into the cloud
+- AWS OpsWorks - Manage Infrastructure
+- AWS CloudFormation - Lets you define the deployment and maintenance 
+
+
+## AWS Services
 
 1. EC2
 2. RDS
