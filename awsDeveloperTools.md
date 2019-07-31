@@ -1,5 +1,17 @@
 [<< Back to Table of Contents](README.md)
 
+## AWS AutoScaling via CloudWatch
+
+- Auto Scaling is especially valuable in environments with fluctuating performance requirements
+- This allows you to maintain performance and minimize cost
+- Best of all, this process can scale out 2 instances in the middle of the night while you are sleeping
+
+## Route 53
+
+- DNS Service ( Route endusers to endpoints )
+- Domain registration, global, highly available DNS ( both IPv4 and IPv6 )
+- Public and private DNS names with multiple routing algorithms
+
 # AWS Code Pipeline
 
 - (Source ) AWS CodeCommit - Git
