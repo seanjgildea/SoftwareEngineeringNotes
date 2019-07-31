@@ -18,7 +18,11 @@
 
 ### 1.3 List the different cloud architecture design principles 
 
-- 
+- The AWS Well-Architected Framework is based on five pillars—security, reliability, performance efficiency, cost optimization, and operational excellence.
+
+- Performance Efficiency: The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve. The performance efficiency pillar focuses on using IT and computing resources efficiently. Key topics include selecting the right resource types and sizes based on workload requirements, monitoring performance, and making informed decisions to maintain efficiency as business needs evolve.
+
+- Operational Excellence: The ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures. The operational excellence pillar focuses on running and monitoring systems to deliver business value, and continually improving processes and procedures. Key topics include managing and automating changes, responding to events, and defining standards to successfully manage daily operations.
 
 ## Domain 2: Security 
 
