@@ -1,4 +1,4 @@
-# :notebook:  AWS Cloud Practitioner Exam 2019 :notebook: 
+# :notebook:  AWS Cloud Practitioner Exam Study Guide :notebook: 
 
 ## Domain 1: Cloud Concepts 
 
