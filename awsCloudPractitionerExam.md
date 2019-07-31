@@ -8,7 +8,13 @@
 
 ### 1.2 Identify aspects of AWS Cloud economics
 
-- 
+- Pay-as-you-go Pricing. AWS does not require minimum spend commitments or long-term contracts. You replace large upfront expenses with low variable payments that only apply to what you use. With AWS you are not bound to multi-year agreements or complicated licensing models.
+
+- Tiered Pricing (Use More, Pay Less). For storage and data transfer, AWS follows a tiered pricing model. The more storage and data transfer you use, the less you pay per gigabyte. In addition, volume discounts and custom pricing are available to customers for high volume projects with unique requirements.
+
+- Cost Optimization. Cost Explorer is a free tool that provides pre-configured reports for common AWS spend queries for current and historical periods, as well as forecasting. It also allows you to customize the reports to meet your specific needs or to download your billing information for use in your own tools.
+
+- Trusted Advisor inspects your AWS environment to finds opportunities that can save you money, improve your system performance, increase your application reliability, and help you implement security best practices. Since 2013, customers have viewed over 2.6 million best-practice recommendations and realized over $350 million in estimated cost reductions.
 
 ### 1.3 List the different cloud architecture design principles 
 
