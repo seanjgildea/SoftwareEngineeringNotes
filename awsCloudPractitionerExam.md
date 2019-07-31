@@ -4,7 +4,9 @@
 
 ### 1.1 Define the AWS Cloud and its value proposition
 
-- 
+- The AWS Cloud provides a broad set of infrastructure services (over 50 services are available), such as computing power, storage options, networking and databases, delivered as a utility: on-demand, available in seconds, with pay-as-you-go pricing. It is available with 44 availability zones within 16 geographic regions across the world - with 17 more availability zones and 6 more regions announced.
+
+- Security, Flexibility, Elasticity, Cost, Agility
 
 ### 1.2 Identify aspects of AWS Cloud economics
 
@@ -21,6 +23,8 @@
 - The AWS Well-Architected Framework is based on five pillars—security, reliability, performance efficiency, cost optimization, and operational excellence.
 
 - Performance Efficiency: The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve. The performance efficiency pillar focuses on using IT and computing resources efficiently. Key topics include selecting the right resource types and sizes based on workload requirements, monitoring performance, and making informed decisions to maintain efficiency as business needs evolve.
+
+- Cost Optimization focuses on avoiding un-needed costs. Key topics include understanding and controlling where money is being spent, selecting the most appropriate and right number of resource types, analyzing spend over time, and scaling to meet business needs without overspending.
 
 - Operational Excellence: The ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures. The operational excellence pillar focuses on running and monitoring systems to deliver business value, and continually improving processes and procedures. Key topics include managing and automating changes, responding to events, and defining standards to successfully manage daily operations.
 
