@@ -41,7 +41,7 @@
 
 ### 2.2 Define AWS Cloud security and compliance concepts 
 
-- 
+- A security assessment service, Amazon Inspector, that automatically assesses applications for vulnerabilities or deviations from best practices, including impacted networks, OS, and attached storage
 
 ### 2.3 Identify AWS access management capabilities 
 
