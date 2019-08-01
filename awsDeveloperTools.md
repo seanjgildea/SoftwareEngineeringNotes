@@ -19,7 +19,11 @@
 - (Production) AWS CodeDeploy
 - (Monitoring) AWS CodeWatch / AWS X-RAY
 
+## AWS Elastic Beanstalk
 
+- Simply upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring. 
+- AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services 
+- Elastic Beanstalk automatically scales your application up and down based on your application's specific need using easily adjustable Auto Scaling settings. For example, you can use CPU utilization metrics to trigger Auto Scaling actions. With Elastic Beanstalk, your application can handle peaks in workload or traffic while minimizing your costs.
 
 ## Deployment and Maintenance
 
