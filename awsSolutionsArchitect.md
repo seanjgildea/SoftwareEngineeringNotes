@@ -37,3 +37,9 @@
 - S3 Managed Keys - SSE - S3
 - AWS Key Management Service, Managed Keys - SSE-KMS ( cooperative encryption )
 - Server Side Encryption with Customer provided Keys - SSE-C
+
+## S3 Versioning and File Permissions
+
+- Stores all version of an object, even writes and deletes
+- Versioning once enabled cannot be disabled, only suspended
+
