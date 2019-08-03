@@ -72,4 +72,7 @@
 ## Snowball & Snowball Edge
 
 - Import to and from S3
+
+## Storage Gateway
+
 - 
