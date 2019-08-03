@@ -43,3 +43,18 @@
 - Stores all version of an object, even writes and deletes
 - Versioning once enabled cannot be disabled, only suspended
 
+## S3 Cross Region Replication
+
+- Versioning must be enabled on both the source and destination buckets
+- Regions must be unique
+- Files in an existing bucket are not replicated automatically
+- All subsequent updated files will be replciated automatically
+- Delete markers are not replicated
+- Deleting individual versions or delete markers will not be replicated
+
+## S3 Transfer Acceleration
+
+- You upload file to a Cloudfront Edge Network location
+- File is sent along backbone to your S3 bucket in your region
+- Transfer acceleration tool lets you see how much faster it is
+
