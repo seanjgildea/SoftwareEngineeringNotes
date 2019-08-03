@@ -58,3 +58,13 @@
 - File is sent along backbone to your S3 bucket in your region
 - Transfer acceleration tool lets you see how much faster it is
 
+## CloudFront
+
+- Really good performance 
+- Typically used for Websites
+- Used for Media Streaming
+- Web Distribution ( Typically used for Websites )
+- RMTP ( Used for Streaming )
+- You can also write to Edge Locations
+- You can clear/invalidate cached objects ( But you will be charged )
+
