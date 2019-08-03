@@ -27,3 +27,13 @@
 - S3 Glacier Deep Archive - retrieval time of 12 hrs is acceptable ( Lowest cost! )
 
 ## Read the S3 FAQ's before taking the Exam!
+
+### Encryption in Transit is achieved by:
+
+- SSL/TLS
+
+### Encryption At Rest (Server Side) is achieved by:
+
+- S3 Managed Keys - SSE - S3
+- AWS Key Management Service, Managed Keys - SSE-KMS ( cooperative encryption )
+- Server Side Encryption with Customer provided Keys - SSE-C
