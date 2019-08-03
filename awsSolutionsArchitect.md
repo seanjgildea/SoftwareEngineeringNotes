@@ -60,6 +60,7 @@
 
 ## CloudFront
 
+- Origin ( Source of all the files that the CDN distributes, ie: S3 Bucket, EC2 Instance, ELB, Route53 )
 - Really good performance 
 - Typically used for Websites
 - Used for Media Streaming
@@ -68,3 +69,7 @@
 - You can also write to Edge Locations
 - You can clear/invalidate cached objects ( But you will be charged )
 
+## Snowball & Snowball Edge
+
+- Import to and from S3
+- 
