@@ -18,6 +18,8 @@
 
 ## AWS Related Topics
 
+- [AWS Solutions Architect Notes](awsSolutionsArchitect.md)
+
 - [AWS Developer Tools](awsDeveloperTools.md)
 
 - [Setting Up an AWS EC2 Web Server](awsCLInotes.md)
