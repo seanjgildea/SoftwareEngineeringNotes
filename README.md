@@ -20,7 +20,7 @@
 
 - [AWS Developer Tools](awsDeveloperTools.md)
 
-- [AWS CLI Notes](awsCLInotes.md)
+- [Setting Up an AWS EC2 Web Server](awsCLInotes.md)
 
 - [AWS Cloud Practitioner Notes](awsCloudPractitionerExam.md)
 
