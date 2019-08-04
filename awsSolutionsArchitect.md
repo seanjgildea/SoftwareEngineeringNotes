@@ -1,5 +1,15 @@
 # AWS Solutions Architect Study Notes
 
+# EC2
+
+## EC2 Notes
+
+- When initially launching an EC2 Instance, the root drive is Not Encrypted
+
+
+
+# S3
+
 ## S3 Notes
 
 - Key, Value, Version ID, Metadata, Subresources ( ACL , Torrent )
