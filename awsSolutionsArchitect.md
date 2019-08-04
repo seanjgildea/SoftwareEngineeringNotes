@@ -6,9 +6,12 @@
 
 - When initially launching an EC2 Instance, the root drive is Not Encrypted
 - Termination protection is turned off by default
+- Security Group changes take effect immediately
+- You can have any number of EC2 instances attached to security groups and vice versa
 - Default action is root EBS volume will be deleted when instance is terminated 
 - When you make a change to a security group, that change takes effect immediately
 - Security Groups are Stateful, NACL's are Stateless
+- All Outbound traffic is allowed even if deleted because Security Groups are stateful
 - Security Groups cant block ports or individual IP addresses ( But everything is blocked by default )
 
 
@@ -87,6 +90,8 @@
 
 - Import to and from S3
 
-## Storage Gateway
+## EBS 
 
+- General Purpose SSD ( gp2 )
+- Provisioned IOPS SSD ( io1 )
 - 
