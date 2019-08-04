@@ -2,13 +2,11 @@
 
 ### Table of contents
 
+## Various Topics
+
 - [Instances for Design Patterns](onDesignPatterns.md)
 
 - [Bootiful TDD By Josh Long](BootifulTDDByJoshLong.md)
-
-- [AWS Developer Tools](awsDeveloperTools.md)
-
-- [Managing Kubernetes on AWS](awsKubernetes.md)
 
 - [MongoDB](mongoDB.md)
 
@@ -17,3 +15,13 @@
 - [Markdown Cheatsheet](markdownCheatsheet.md)
 
 - [Java 8 Streams](java8Streams.md)
+
+## AWS Related Topics
+
+- [AWS Developer Tools](awsDeveloperTools.md)
+
+- [AWS CLI Notes](awsCLInotes.md)
+
+- [AWS Cloud Practitioner Notes](awsCloudPractitionerExam.md)
+
+- [AWS Kubernetes Notes](awsKubernetes.md)
