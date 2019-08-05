@@ -1,6 +1,16 @@
 # AWS Solutions Architect Study Notes
 
-# EC2
+# EC2 Placement Groups
+
+- Clustered placement groups - low latency, high throughput, cant span AZ's, req's unique name
+- Spread placement group - separated away from each other, can span AZ's, req's unique name
+
+Clustered | Spread
+------------ | -------------
+Extremely Low Latency | Distinct hardware
+High Throughput | Critical instances separate
+Cannot span AZ's | Can span AZ's 
+Requires unique name | Requires unique name
 
 ## EC2 Snapshots
 
