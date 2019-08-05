@@ -4,6 +4,9 @@
 
 ## EC2 Snapshots
 
+- Snapshots of encrypted volumes are encrypted automatically
+- Volumes restored from encrypted snapshots are encrypted automatically
+- 
 - To move an EC2 volument from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in the new AZ
 - To move an EC2 volume from one region to another, take a snapshot of it, create an AMI from the snapshot and then copy the AMI from one region to the other. Then use the copied AMI to launch the new EC2 instance in the new region.
 
