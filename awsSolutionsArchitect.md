@@ -10,9 +10,13 @@
 - To move an EC2 volument from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in the new AZ
 - To move an EC2 volume from one region to another, take a snapshot of it, create an AMI from the snapshot and then copy the AMI from one region to the other. Then use the copied AMI to launch the new EC2 instance in the new region.
 
-## EC2 Instance Store vs EBS
+## EC2 Instance Data
 
-- 
+- Instance data can be retrieved with ( such as public ip )
+
+        curl http://169.254.169.254/latest/user-data/
+        curl http://169.254.169.254/latest/meta-data/
+
 
 ## EC2 Notes
 
