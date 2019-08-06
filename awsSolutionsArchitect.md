@@ -7,6 +7,16 @@
 - RDS is NOT serverless ( Aurora is the exception to the rule )
 - Aurora Serverless is Serverless
 
+### RDS Backups and Read Replicas
+
+- Two types of database backups ( Automated Backups and Database Snapshots )
+- Read Replica's can be Multi-AZ, used to increase performance, must have backups turned on, can be in diff regions, can be Aurora or Mysql and finally, can be promoted to Master but this will break Read Replica
+- Encryption at rest supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB and Aurora
+- Encryption is doing using the AWS Key Management System (KMS)
+- Once RDS instance is encryped, the data stored at rest in underlying storage is also encrypted ( automated backups, read replicas and snapshots )
+
+# EC2 Notes
+
 ## EC2 Placement Groups
 
 - Clustered placement groups - low latency, high throughput, cant span AZ's, req's unique name
