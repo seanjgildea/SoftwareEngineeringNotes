@@ -1,5 +1,17 @@
 # AWS Solutions Architect Study Notes
 
+## DNS and Route 53
+
+- SOA ( Start of Authority ) record contains the NS records
+- A record stands for Address, used to translate a domain to an IP address
+- C record ( Canonical Name ) resolves one domain name to another domain name
+- Alias records are similar to a CNAME record however a CNAME cant be used for a naked domain name (w/out www)
+- TTL ( Time to Live ) is the length that a DNS record is cached in seconds
+- 48 hours default TTL cached length
+- ELB's do not have pre-defined IPV4 addresses
+- Given the choice, always choose an Alias over a CNAME
+- PTR Record is the reverse of an A record
+
 ## RDS
 
 - RDS runs on virtual machines, you cannot log into these OS's 
@@ -7,13 +19,41 @@
 - RDS is NOT serverless ( Aurora is the exception to the rule )
 - Aurora Serverless is Serverless
 
-### RDS Backups and Read Replicas
+## Athena
+
+- Interactive query service that makes it easy to analyze data
+- Works with JSON, Apache Parquet and Apache ORC data formats
+
+### Read Replicas
+
+- Read Replica's can be Multi-AZ
+- Can be used to increase performance
+- Must have backups turned on
+- Can be in different regions
+- Can be Aurora or Mysql
+- Can be promoted to Master but this will break Read Replica
+
+### RDS Backups
 
 - Two types of database backups ( Automated Backups and Database Snapshots )
-- Read Replica's can be Multi-AZ, used to increase performance, must have backups turned on, can be in diff regions, can be Aurora or Mysql and finally, can be promoted to Master but this will break Read Replica
 - Encryption at rest supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB and Aurora
 - Encryption is doing using the AWS Key Management System (KMS)
 - Once RDS instance is encryped, the data stored at rest in underlying storage is also encrypted ( automated backups, read replicas and snapshots )
+
+### Redshift
+
+- 1 day retention period backups by default
+- max retention period is 35 days
+- always maintains at least 3 copies of your data
+- can also async replicate data to s3 in another region for DR
+
+### Aurora
+
+- 10 gig increments
+- 2 copies of data in each AZ w/ minimum 3 AZ's ( 6 copies of your data )
+- extremely high available
+- storage is self healing, data blocks continiously scanned for errors
+- backups en
 
 # EC2 Notes
 
