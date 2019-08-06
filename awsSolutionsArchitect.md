@@ -1,6 +1,13 @@
 # AWS Solutions Architect Study Notes
 
-# EC2 Placement Groups
+## RDS
+
+- RDS runs on virtual machines, you cannot log into these OS's 
+- You cannot patch or maintain these systems ( you can with EC2, that's your responsibility )
+- RDS is NOT serverless ( Aurora is the exception to the rule )
+- Aurora Serverless is Serverless
+
+## EC2 Placement Groups
 
 - Clustered placement groups - low latency, high throughput, cant span AZ's, req's unique name
 - Spread placement group - separated away from each other, can span AZ's, req's unique name
