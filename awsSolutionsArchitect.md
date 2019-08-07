@@ -6,7 +6,7 @@
 
 - Simple ( one record with multiple IP addresses )
 - Simple ( all values returned in random order )
-
+- Weighted ( 20% can go to one Region, 80% to another Region )
 
 - SOA ( Start of Authority ) record contains the NS records
 - A record stands for Address, used to translate a domain to an IP address
