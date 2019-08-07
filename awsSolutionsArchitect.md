@@ -2,6 +2,12 @@
 
 ## DNS and Route 53
 
+### Routing Policies
+
+- Simple ( one record with multiple IP addresses )
+- Simple ( all values returned in random order )
+
+
 - SOA ( Start of Authority ) record contains the NS records
 - A record stands for Address, used to translate a domain to an IP address
 - C record ( Canonical Name ) resolves one domain name to another domain name
