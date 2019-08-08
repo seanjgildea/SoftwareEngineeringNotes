@@ -2,13 +2,13 @@
 
 ## Amazon Recommended FAQ's
 
-- [https://aws.amazon.com/architecture/well-architected/](Well Architected)
-- [https://aws.amazon.com/sqs/faqs/](S3)
-- [https://aws.amazon.com/route53/faqs/](Route 53)
-- [https://aws.amazon.com/ec2/faqs/](EC2)
-- [https://aws.amazon.com/vpc/faqs/](VPC)
-- [https://aws.amazon.com/rds/faqs/](RDS)
-- [https://aws.amazon.com/sqs/faqs/](SQS)
+- [https://aws.amazon.com/architecture/well-architected/] (Well Architected)
+- [https://aws.amazon.com/sqs/faqs/] (S3)
+- [https://aws.amazon.com/route53/faqs/] (Route 53)
+- [https://aws.amazon.com/ec2/faqs/] (EC2)
+- [https://aws.amazon.com/vpc/faqs/] (VPC)
+- [https://aws.amazon.com/rds/faqs/] (RDS)
+- [https://aws.amazon.com/sqs/faqs/] (SQS)
 
 ## DNS and Route 53
 
