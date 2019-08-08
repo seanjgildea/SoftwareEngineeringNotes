@@ -43,7 +43,7 @@
 
 - Two types of database backups ( Automated Backups and Database Snapshots )
 - Encryption at rest supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB and Aurora
-- Encryption is doing using the AWS Key Management System (KMS)
+- Encryption is done using the AWS Key Management System (KMS)
 - Once RDS instance is encryped, the data stored at rest in underlying storage is also encrypted ( automated backups, read replicas and snapshots )
 
 ### Redshift
