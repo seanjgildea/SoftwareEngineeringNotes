@@ -10,6 +10,22 @@
 - [https://aws.amazon.com/rds/faqs/] (RDS)
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
+## VPC's NAT Instances and Gateways
+
+- NAT Instance - Terribly out of date, being phased out
+- NAT Instance - Prone to bottlenecking, requires larger instance for more nodes to connect to
+- NAT Instance - Individuals, single EC2 instance, must disable source/destination check on instance
+- NAT Instance - Personal gateway for private subnets, single point of failure if terminated, blackhole 
+- NAT Gateways - 9x out of 10 you're using these. Highly available, spread across multiple AZ's
+- NAT Gateways - Allows your private subnets to communicate out to the internet without becoming public 
+- NAT Gateways - Only one per AZ, preferred by Enterprise, 5Gbps and scales up to 45Gbps
+- NAT Gateways - No need to patch, not assoc with Sec Groups, auto assigned Public IP Address
+- NAT Gateways - Always create multiple NAT Gateway in each AZ and configure routing to ensure they use the GW in their AZ
+
+## Network Access Control Lists ( NACL's)
+
+- When created, everything DENIED by default
+
 ## DNS and Route 53
 
 ### Routing Policies
