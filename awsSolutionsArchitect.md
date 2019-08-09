@@ -10,6 +10,35 @@
 - [https://aws.amazon.com/rds/faqs/] (RDS)
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
+## VPC Endpoints
+
+- Interface Endpoints ( Elastic Network Interface ) ENI - 
+- Gateway Endpoints ( S3 and Dynamo supported ) 
+- Does not require an internet gateway, nat device
+
+## VPC Flow Logs
+
+- Captures information for CloudWatch
+- Created at VPC, Subnet and Network Interface Levels
+- Cannot tag a flowlog
+- Cannot associate different IAM role once created
+- Not all IP traffic is monitored
+
+## NAT's versus Bastions
+
+- Why use Bastions? You want to SSH/RDP into one of your private subnet EC2 instances
+- Why use Nat Gateways/Instances? To provide internet traffic to EC2 instances on private subnets
+- Network computer designed to withstand attacks
+- Cannot use a NAT Gateway as a Bastion host
+
+## Direct Connect
+
+- On premises to AWS connection via dedicated lines
+
+## Application Load Balancers 
+
+- Minimum of 2 subnets required!!
+
 ## VPC's NAT Instances and Gateways
 
 - NAT Instance - Terribly out of date, being phased out
@@ -25,6 +54,14 @@
 ## Network Access Control Lists ( NACL's)
 
 - When created, everything DENIED by default
+- When creating NACL's, all inbound/outbound traffic is denied by default
+- When creating, if you don't associate a subnet, the default is specified
+- You can block IP's with NACL's, you cannot with Security Groups
+- You can associate a NACL with multiple subnets
+- A subnet can only be associated with NACL at a time
+- Numbered list of rules, in order of precedence
+- Stateless, inbound does not mean same rules for outbound
+
 
 ## DNS and Route 53
 
