@@ -12,6 +12,9 @@
 
 # Load Balancers
 
+- Resiliency: Ability of a system to self heal after damage or an event
+- Scaling Up: Adding more RAM or buffing up the resources
+- Scaling Out: More of same resource working in parallel
 - Sticky Sessions: sends a user to an ec2 instance despite a load balancer
 - No Cross Zone Load Balancing: Cannot send traffic to another AZ
 - With Cross Zone Load Balancing:  Can send traffic across other Availability Zones
