@@ -12,9 +12,11 @@
 
 ## Cognito ( Web Identity Federation )
 
-## Kinesis
+## Kinesis Streams
 
-- 
+- Stored by default for 24 hours. Data in individual **shards** ( boxes ) up to 7 days
+- Only form that has **shards**
+- Kinesis Firehose: No Data persistence. Data analyzed as data comes in and stored in S3, Redshift, etc
 
 ## API Gateway
 
