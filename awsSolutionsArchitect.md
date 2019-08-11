@@ -10,6 +10,14 @@
 - [https://aws.amazon.com/rds/faqs/] (RDS)
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
+# Load Balancers
+
+- Sticky Sessions: sends a user to an ec2 instance despite a load balancer
+- No Cross Zone Load Balancing: Cannot send traffic to another AZ
+- With Cross Zone Load Balancing:  Can send traffic across other Availability Zones
+- Path Patterns: Allow you to direct traffic to different EC2 instances based on the URL contained in the request
+
+
 ## VPC Endpoints
 
 - Interface Endpoints ( Elastic Network Interface ) ENI - 
@@ -247,3 +255,8 @@ Requires unique name | Requires unique name
 - General Purpose SSD ( gp2 )
 - Provisioned IOPS SSD ( io1 )
 - 
+
+
+## Extra
+
+- Amazon Quick Starts https://aws.amazon.com/quickstart/
