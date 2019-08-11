@@ -10,7 +10,78 @@
 - [https://aws.amazon.com/rds/faqs/] (RDS)
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
-# Load Balancers
+## Cognito ( Web Identity Federation )
+
+## Kinesis
+
+- 
+
+## API Gateway
+
+- Exposes HTTPS endpoints to define a RESTful API
+- Runs efficiently with very low cost
+- Front End: Can be passed to Lambda, EC2 or DynamoDB
+- Fully managed service to publish maintain and secure API's at any scale
+- Click an API that acts as a front door for your apps to access data, biz logic or functionalityfrom your back-end services
+- You don't need EC2 instances behind it. You can use it for code running on Lambda functions
+- Scales effortlessly, no need to work with auto-scaling groups
+- Track and control usage with an API-key
+- Throttle requests to prevent attacks
+- Connect to cloudwatch to log all requests for monitoring
+- Maintain multiple versions of your API. Can use a custom domain name
+- Supports AWS Certificate Manager: free SSL/TLS certs
+- **API Caching**: Cache your endpoint responses. 
+
+## Cross Origin Resource Sharing
+
+- Cross Origin Resource Sharing: 
+- Same Origin Policy: A script in one page can execute on another page if its from the same domain. This prevents one domain from attacking other domains (cross-site scripting XSS attacks)
+- CORS: Cross-origin resource sharing is a mechanism that allows restricted resources ( fonts eg ) to be shared from one domain on another domain
+- Error: "Origin policy cannot be read at the remote resource?" - **You need to enable CORS on API Gateway**
+- CORS enforced by the Client (browser)
+
+
+## Elastic Transcoder
+
+- Media Transcoder in the cloud
+- Coverting media files from original source into different formats that will play on smartphones, tablets, PC's etc
+- Provides transcoding presets for popular output formats
+- A Cloud Guru uses this with a lambda function to generate their videos since 2015
+
+## SQS 
+
+- Pull based, not pushed based like SNS
+- 256kb in size
+- Messages can be kept in queue from 1 min to 14 days
+- Visibility time out: time message is invisible in the SQS queue after reader picks up message. This allows a message on a dead to be visible again after an amount of time and picked up by another EC2 instance. 12 hrs maximum.
+- Guarantees processed at least once
+- SQS long polling doesnt return response until message arrives in queue. Way to save money also. 
+
+## SNS (Simple Notification System)
+
+- Both SNS and SQS are messaging systems but one is push ( SNS ) and one is pull/poll ( SQS )
+- Inexpensive, flexible message delivery, simple API with easy integration
+- Push notifications, no polling ( Apple, google, Android, Fire OS, Windows )
+- SMS Text, Email, SQS, or any HTTP endpoint
+- Group multiple recipients using topics
+- A topic is an "access point" 
+- A billing alert is a "billing topic"
+- You can group together multiple endpoint types into one topic
+- Stored redudantly across multiple AZ's
+
+
+## SWF ( Simple WorkFlow Service )
+
+- Coordinates work across distributed application components. 
+- Task coordinator performed by executable code, web service calls, human actions and scripts
+- Remember how Amazon uses it, in a Warehouse with human interaction
+- Workflow executions can last up to 1 year
+- Task-oriented API, whereas SQS is a message-oriented API
+- Keeps track of all tasks and events in an application
+- Assigned once and never duplicated
+- SWF Actors: Workflow starters ( an app that can initiate a workflow ) Deciders: ( Controls flow of activity tasks in workflow execution) Activity Workers: (Carrys out the activity tasks)
+
+##  Load Balancers
 
 - Resiliency: Ability of a system to self heal after damage or an event
 - Scaling Up: Adding more RAM or buffing up the resources
