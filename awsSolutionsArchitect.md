@@ -10,13 +10,24 @@
 - [https://aws.amazon.com/rds/faqs/] (RDS)
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
-## Cognito ( Web Identity Federation )
+## Cognito ( Web Identity Federation service )
 
-## Kinesis Streams
+- Brokers between the app and Facebook/Google to provide temp credentials which map to an IAM role allowing access
+- User Pool: User directory sign-up and sign-in. Cognito brokers and generates a JSON web token (JWTs) ( User database basically )
+- Identity Pool: Temp identity credentials for things like S3 or DynamoDB ( Actual granting of a resource )
+- User authentication with Google, Facebook credentials. 
+- Sign-up and sign-in to your apps
+- Access for guest users
+- Acts as an identiy broker for your app and web id providers so you dont need to write additional code
+- Recommended for all mobile-app aws services
+- 
+
+## Kinesis Streams versus Kinesis Firehose
 
 - Stored by default for 24 hours. Data in individual **shards** ( boxes ) up to 7 days
 - Only form that has **shards**
 - Kinesis Firehose: No Data persistence. Data analyzed as data comes in and stored in S3, Redshift, etc
+- Kinesis Analytics: Analyzes data within Streams and Firehose
 
 ## API Gateway
 
@@ -57,6 +68,7 @@
 - Messages can be kept in queue from 1 min to 14 days
 - Visibility time out: time message is invisible in the SQS queue after reader picks up message. This allows a message on a dead to be visible again after an amount of time and picked up by another EC2 instance. 12 hrs maximum.
 - Guarantees processed at least once
+- Decouples your infrastructure
 - SQS long polling doesnt return response until message arrives in queue. Way to save money also. 
 
 ## SNS (Simple Notification System)
