@@ -10,6 +10,25 @@
 - [https://aws.amazon.com/rds/faqs/] (RDS)
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
+## Random Notes
+
+- Soft limit of 20 EC2 instances per REGION
+- Public subnet has at least one route in its routing table that uses an Internet Gateway
+- RDS, DynamoDB and Elasticache are all stateless
+- To prevent accidental data loss with S3, enable versioning and MFA Delete on bucket 
+- S3 Bucket names are global
+- If Cloudfront cannot find a resource it will query the origin server and then cache the resource on the edge location
+- KMS allows you to import your own keys, disable and reenable keys and define key management roles in IAM
+- AWS Shield operates on layer 3/4 and its primary purpose is to protect against DDoS attacks, not SQL injection attacks
+- Memory usage is a custom Cloudwatch metric not enabled by default because of the Shared Security Model. 
+- A placement group can only have 7 running instances per AZ
+- EBS, S3 and EFS allow native encryption of data at rest
+- SQL Server and Oracle have limits as to how many databases can run per instance because of licensing / proprietary nature
+- Parameters, Resources and Outputs are valid CloudFormation template sections
+- Reduced Redundancy Storage is the only S3 class that does not offer 99.9-9's durability
+- To prevent Auto-Scaling from scaling up and down so rapidly, modify Auto-Scaling group cool-down timers and modify the Cloudwatch alarm period that triggers your Auto Scaling scale down policy
+
+
 ## Cognito ( Web Identity Federation service )
 
 - Brokers between the app and Facebook/Google to provide temp credentials which map to an IAM role allowing access
