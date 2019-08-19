@@ -26,3 +26,10 @@
 - [Markdown Cheatsheet](markdownCheatsheet.md)
 
 - [Java 8 Streams](java8Streams.md)
+
+
+## August 2019 Milestones
+
+- Maven multi-module projects
+- Spring Boot conversion for Spring 3 parent pom's
+- Nexus repository adding via curl commands
