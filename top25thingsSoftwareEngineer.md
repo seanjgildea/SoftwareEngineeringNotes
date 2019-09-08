@@ -1,6 +1,4 @@
-# My top 25 things a Senior Software Engineer must know
-
-This is a simple checklist, and while it is useful to any software engineer, it is especially useful to senior engineers. More items from the list can be found here.
+# Top 25 things a Senior Software Engineer should know
 
 1. Understand the business aspect of your work, and what makes money. Eventually, only that matters.
 2. Get involved with hiring for your team and company, and maintain a high bar for hiring quality candidates.
