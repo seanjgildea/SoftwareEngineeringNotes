@@ -15,6 +15,8 @@
 
 ## Various Topics
 
+- [Top 25 things Senior Engineers should know](top25thingsSoftwareEngineer.md)
+
 - [Instances for Design Patterns](onDesignPatterns.md)
 
 - [Bootiful TDD By Josh Long](BootifulTDDByJoshLong.md)
