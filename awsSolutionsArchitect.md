@@ -10,6 +10,26 @@
 - [https://aws.amazon.com/rds/faqs/] (RDS)
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
+
+
+## Domain 2: Define Performant Architectures
+
+### 2.1 Choose performant storage and databases.
+
+### 2.2 Apply caching to improve performance.
+
+### 2.3 Design solutions for elasticity and scalability.
+
+
+## Domain 3: Specify Secure Applications and Architectures
+
+### 3.1 Determine how to secure application tiers.
+
+### 3.2 Determine how to secure data.
+
+### 3.3 Define the networking infrastructure for a single VPC application.
+
+
 ## Random Notes
 
 - Soft limit of 20 EC2 instances per REGION
