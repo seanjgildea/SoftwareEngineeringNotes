@@ -147,8 +147,9 @@
 
 ## VPC Endpoints
 
-- Interface Endpoints ( Elastic Network Interface ) ENI - 
-- Gateway Endpoints ( S3 and Dynamo supported ) 
+- Interface Endpoints ( Elastic Network Interface ) - Over 20 services supported 
+- You basically attach an ENI to an Elastic Service , no internet traversing
+- Gateway Endpoints ( look like Nat Gateways ) ( S3 and Dynamo supported only ) 
 - Does not require an internet gateway, nat device
 
 ## VPC Flow Logs
