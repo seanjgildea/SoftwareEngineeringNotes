@@ -11,6 +11,21 @@
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
 
+## Data at Rest
+
+### Server Side encryption options
+- Amazon S3-Managed Keys (SSE-S3)
+- KMS-Managed Keys (SSE-KMS)
+- Customer-Provided Keys (SSE-C)
+
+### Client-side encryption options
+- KMS managed master encryption keys (CSE-KMS)
+- Customer managed master encryption keys (CSE-C)
+
+## Key Management Systems
+
+- KMS and CloudHSM 
+
 ## Security Groups vs NACL's
 
 - Security Groups operate at the Instance or Network Interface level
