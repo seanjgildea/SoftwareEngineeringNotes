@@ -11,6 +11,11 @@
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
 
+## Auto Scaling and Cloudwatch
+
+- Cloudwatch can monitor CPU, Network and Queue Size
+- Scaling in and out ( horizontal ) scaling up and down ( vertical ) for RDS's
+
 ## Data at Rest
 
 ### Server Side encryption options
