@@ -35,3 +35,16 @@
 - Maven multi-module projects
 - Spring Boot conversion for Spring 3 parent pom's
 - Nexus repository adding via curl commands
+- Beginning of AWS Certifications
+
+## September 2019 Milestones
+
+- DevOps knowledge deep dive
+- Elasticpath 7 deep dive
+- AWS Solutions Architect Associate coursework
+
+## October 2019 Goals
+
+- Apache Camel EIPs
+- Pass AWS Solutions Architect Associate Exam
+- Docker / K8s / Terraform / JFrog dives
