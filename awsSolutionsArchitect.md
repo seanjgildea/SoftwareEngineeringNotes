@@ -11,23 +11,20 @@
 - [https://aws.amazon.com/sqs/faqs/] (SQS)
 
 
+## Security Groups vs NACL's
 
-## Domain 2: Define Performant Architectures
+- Security Groups operate at the Instance or Network Interface level
+- Security Groups only let you allow traffic ( cannot deny traffic )
+- Security Groups are stateful
+- Security Groups apply to Network Interfaces
+- NACL's let you allow and deny traffic
+- NACL's operate at the subnet level
+- NACL's apply to subnets
 
-### 2.1 Choose performant storage and databases.
+- Use security groups to control traffic into, out of and between resources
+- Security groups can be shared between subnets and availability zones
+- 
 
-### 2.2 Apply caching to improve performance.
-
-### 2.3 Design solutions for elasticity and scalability.
-
-
-## Domain 3: Specify Secure Applications and Architectures
-
-### 3.1 Determine how to secure application tiers.
-
-### 3.2 Determine how to secure data.
-
-### 3.3 Define the networking infrastructure for a single VPC application.
 
 
 ## Random Notes
