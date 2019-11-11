@@ -138,7 +138,7 @@
 
 # Whitepapers to Study
 
-XRay [https://docs.aws.amazon.com/xray/latest/devguide/xray-api-segmentdocuments.html]
+[https://docs.aws.amazon.com/xray/latest/devguide/xray-api-segmentdocuments.html]
 
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html#GSI.ThroughputConsiderations
 
