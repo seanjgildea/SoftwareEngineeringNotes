@@ -2,6 +2,8 @@
 
 ## AWS Related Topics
 
+- [AWS Developer Associate Notes](awsdeveloperassociate.md)
+
 - [AWS Solutions Architect Notes](awsSolutionsArchitect.md)
 
 - [AWS Developer Tools](awsDeveloperTools.md)
