@@ -55,7 +55,12 @@
 
 - Comparison between ElasticCache and DynamoDB (DynamoDB was used heavily in the exam)
 
-- DynamoDB Cache Strategy
+- DynamoDB DAX
+  - Clustered in-memory cache for Eventually Consistent reads ONLY
+  - For read-heavy and bursty workloads ( Black Friday ) 
+  - write-through caching service 
+  - cache misses are retrieved via GETITEM operation 
+  - DAX bad for write intensive apps and Strongly Consistent reads
 
 - DynamoDB Scan vs Query
   - Scan dumps entire table than filters on attribute
