@@ -22,6 +22,8 @@
 
 # Lambda
 
+- It was all about the functionality of the service itself. Understand execution times, the concept of concurrent executions, and how Lambda can be triggered.
+
 - IAM, CodeDeploy, CloudFormation. Particularly, how to deploy a lambda function using these services
 
 - Lambda code size limits
@@ -38,6 +40,8 @@
 
 
 # CloudFormation 
+
+- CloudFormation does show up in the exam including intrinsic functions, mappings,
 
 - huge topic, templates, nested, SAM
 
@@ -67,6 +71,10 @@
 
 - Client-side encryption with KMS and You needed to know the sequence
 
+- Plenty of questions on the different services. Definitely know what role each service plays
+
+-  Know SAM and examples of build and deploy scripts
+
 # X-Ray
 
 - Instrumenting your applications with X-Ray
@@ -91,6 +99,8 @@
 
 - When to use SQS and when to use Kinesis Data Stream
 
+- remember which Kinesis service is used for which function
+
 
 # Cloudwatch, Cloudtrail and AWS Config
 
@@ -104,6 +114,8 @@
 
 - myapi?name=test vs. myapi/test - how to get the API to handle both cases Very strange and complicated use cases.
 
+- Extremely heavy in this, with lots of things about authorization, a bit of caching, and plenty about how resources (particularly Lambda) are invoked. 
+
 # Cognito / Cognito Sync
 
 - Two questions on AWS Cognito Syncing and data management.
@@ -112,9 +124,21 @@
 
 - Remember that Cognito is the preferred Federation method for mobile.
 
+# KMS
+
+- Fargate is also briefly explained and his section on KMS
+
+- Gotta watch those lectures. The concept of Customer Master Keys and Envelope Keys were definitely there
+
+# Various
+
+- Systems Manager Parameter Store - Know how it works and what it can do for you
+
+- know how to use S3 bucket policy to prevent uploads of unencrypted objects.
+
 # Whitepapers to Study
 
-(XRay)[https://docs.aws.amazon.com/xray/latest/devguide/xray-api-segmentdocuments.html]
+XRay [https://docs.aws.amazon.com/xray/latest/devguide/xray-api-segmentdocuments.html]
 
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html#GSI.ThroughputConsiderations
 
