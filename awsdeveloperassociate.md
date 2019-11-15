@@ -20,6 +20,13 @@
 
 - Beanstalk deployment optimization & Beanstalk with Docker
 
+# Exam API Commands
+
+- GetSessionToken: used to call an API where he can submit the MFA code associated with his MFA device
+- AssumeRoleWithWebIdentity: returns a set of temporary security credentials for federated users
+- AssumeRoleWithSAML: returns a set of temporary security credentials for users who have been authenticated via a SAML resp
+- GetFederationToken: Does not support MFA
+
 # Lambda
 
 - It was all about the functionality of the service itself. Understand execution times, the concept of concurrent executions, and how Lambda can be triggered.
@@ -49,27 +56,36 @@
 
 - Swagger - really was mentioned in passing, but I also had 2 questions, Swagger + cfn-init using CloudFormation - go figure.
 
-# DynamoDB
+# DynamoDB / Elasticache
 
-- DynamoDB - several question on throttling and primary table throttling due to secondary index under provisioning
-
-- Comparison between ElasticCache and DynamoDB (DynamoDB was used heavily in the exam)
-
+- dynamodb:LeadingKeys = fine grained access control IAM condition parameter where partition key value matches their user ID
+- LSI vs GSI Indexes
+  - Local Secondary Index (LSI) = An index that has the same partition key as the base table, but a different sort key.
+  - Global Secondary Index (GSI) = An index with a partition key and a sort key that can be different from those on the base table
+  - The primary key of a Local Secondary Index must be composite (partition key and sort key).
+  - The primary key of a Global Secondary Index can be either simple (partition key) or composite (partition key and sort key).
+  - A global secondary index lets you query over the entire table, across all partitions. LSI: Only single partition
+  - When you query a LSI, you can choose either eventual consistency or strong consistency. GSI: Only eventual consistency
+  - Global secondary indexes inherit the read/write capacity mode from the base table
+  - When you query a local secondary index, the number of read capacity units consumed depends on how the data is accessed. An index query can use either eventually consistent or strongly consistent reads depending on the value of ConsistentRead
 - DynamoDB DAX
   - Clustered in-memory cache for Eventually Consistent reads ONLY
   - For read-heavy and bursty workloads ( Black Friday ) 
   - write-through caching service 
   - cache misses are retrieved via GETITEM operation 
   - DAX bad for write intensive apps and Strongly Consistent reads
-
 - DynamoDB Scan vs Query
-  - Scan dumps entire table than filters on attribute
+  - Avoid scan operations, use Query, Get or BatchGetItem APIs
+  - Scan dumps entire table then filters on attribute
   - Query on Partition Key (Primary Key)
   - Pagesize can reduce impact (fewer read operations)
   - Parallel scan divides into segments scanning each in parallel
   - Use ProjectExpression parameter to refine a scan result
   - ScanIndexForward=false reverses order of queries only
-  
+- Elasticache: Lazy Loading vs Write Through
+  - Cache miss penalty: Lazy Loading: Initial request, query db, write to cache
+  - Write through: Update cache whenever change to db. Data never stale but cache penalty
+- 
 - DynamoDB GSI and LSI (including its RCU and WCU relationship with the base table)
 
 # CodePipeline, CodeDeploy, CodeCommit, CodeBuild
