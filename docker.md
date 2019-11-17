@@ -1,4 +1,4 @@
-# Docker Notes
+# Docker Cert Study Notes
 
 - Everytime you run a new container you get a new unique ID
 - Containers are just processes
