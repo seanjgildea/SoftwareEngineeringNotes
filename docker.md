@@ -3,6 +3,8 @@
 - Everytime you run a new container you get a new unique ID
 - Containers are just processes
 - Docker bridge is a container level network that acts as sort of a VPC
+- Containers shouldn't rely on IP's for inter-communication
+- 
 
 
 # Docker Commands
@@ -22,13 +24,18 @@
 - docker network inspect
 - docker network create --driver
 - docker network connect/disconnect [id of network] [id of container]
-- --
+- docker container run --rm -it centos:7 bash
+  - yum update curl
+- docker container run --rm -it ubuntu:14.04 bash
+- docker network create seans_network
+- docker container run -d --net seans_network --net-alias search elasticsearch:2
+- docker container run --rm --net seans_network alpine nslookup search
+- docker container run --rm --net seans_network centos curl -s search:9200
 
 # Docker Flags
 
 --detach (run a container in the background and return the container id)
-
-
+--rm removes the container after exiting
 
 # Shortcuts
 
