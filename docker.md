@@ -4,6 +4,7 @@
 - Containers are just processes
 - Docker bridge is a container level network that acts as sort of a VPC
 - Containers shouldn't rely on IP's for inter-communication
+- Double && means we want these commands to all be on the same layer
 - 
 
 
@@ -31,6 +32,9 @@
 - docker container run -d --net seans_network --net-alias search elasticsearch:2
 - docker container run --rm --net seans_network alpine nslookup search
 - docker container run --rm --net seans_network centos curl -s search:9200
+- docker image tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+
+
 
 # Docker Flags
 
