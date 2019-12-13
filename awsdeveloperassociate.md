@@ -8,16 +8,11 @@
 # ECS & ECR
 
 - Yes, a huge chunk in my exam, probably 15-20 questions.  They are all about provisioning underlying EC2, what can be done in a task definition, etc. e.g. I got questions about using ALB for dynamic port mapping and where to configure that.
-
 - There were many questions on ECS (single, multi-containers, container agent, task definitions ) 
-
 - Many questions about Elastic Load Balancers, Beanstalk, EC2 and ECS
-
 - What is the correct procedure to remove RDS from Elastic Beanstalk?
   -  Create a saved configuration, download from S3 (in your EBS S3 bucket, go to resources/templates/<your-app-name>/), edit to remove the RDS instance, and re-upload it.
-  
 - how to force your application to use the EBS DNS
-
 - Beanstalk deployment optimization & Beanstalk with Docker
 
 # Exam API Commands
@@ -30,30 +25,22 @@
 # Lambda
 
 - It was all about the functionality of the service itself. Understand execution times, the concept of concurrent executions, and how Lambda can be triggered.
-
 - IAM, CodeDeploy, CloudFormation. Particularly, how to deploy a lambda function using these services
-
 - Lambda code size limits
-
 - Lambda (used heavily in the exam) deployment using CloudFormation
- 
 - How to schedule a lambda function
-
 - Understand Swagger with Lambda and SAM/Cfn
-
 - SWAGGER and how its used to deploy a serverless framework
-
 - Various Lambda configurations: VPC Integration, RAM, Concurrency Execution
+- Cloudwatch logs help debug lambda function output by default
+- Cloudwatch automatically monitors functions on your behalf, reporting metrics like total request rates. 
 
 
 # CloudFormation 
 
 - CloudFormation does show up in the exam including intrinsic functions, mappings,
-
 - huge topic, templates, nested, SAM
-
 - Understand differences and most importantly when to use them.
-
 - Swagger - really was mentioned in passing, but I also had 2 questions, Swagger + cfn-init using CloudFormation - go figure.
 
 # DynamoDB / Elasticache
@@ -91,37 +78,30 @@
 # CodePipeline, CodeDeploy, CodeCommit, CodeBuild
 
 - Client-side encryption with KMS and You needed to know the sequence
-
 - Plenty of questions on the different services. Definitely know what role each service plays
-
--  Know SAM and examples of build and deploy scripts
+- Know SAM and examples of build and deploy scripts
+- create-project / update-project commands run a build with a source location of the build
 
 # X-Ray
 
 - Instrumenting your applications with X-Ray
-
 - X-Ray Segment Documents
-
 - X-ray -was seen multiple times during the exam
-
 - Enable active tracing particularly
-
 - how to instrument applications in EC2 for X-ray
-
 - how to instrument applications running in Docker containers in ECS for X-ray etc
 
 # SQS & Kinesis 
 
 - Kinesis Resharding. Remember that each shard is processed by exactly one KCL worker and has exactly one corresponding record processor, so you never need multiple instances to process one shard.
-
 - SQS Dead Letter Queues details
-
 - SQS was covered in detail (FIFO queues etc..)
-
 - When to use SQS and when to use Kinesis Data Stream
-
 - remember which Kinesis service is used for which function
 
+# Elastic Beanstalk
+
+- You can set configuration options in saved configurations/files to change things like instance type upon environment creation.
 
 # Cloudwatch, Cloudtrail and AWS Config
 
@@ -129,32 +109,27 @@
 
 # API Gateway
 
--  some tricky questions on API Gateway and lambda especially around rate limiting
-
+- Some tricky questions on API Gateway and lambda especially around rate limiting
 - API Gateway Cache Invalidation
-
 - myapi?name=test vs. myapi/test - how to get the API to handle both cases Very strange and complicated use cases.
-
 - Extremely heavy in this, with lots of things about authorization, a bit of caching, and plenty about how resources (particularly Lambda) are invoked. 
+- WAF and Resource Policies can both limit or deny specific IP addresses from accessing API Gateway
+- Stage variables are name-value pairs that you define as config attributes associated with a deployment stage of an API. They act like env vars and can be used in your API setup and mapping templates.
 
 # Cognito / Cognito Sync
 
 - Two questions on AWS Cognito Syncing and data management.
-
 - Cognito was included in many questions
-
 - Remember that Cognito is the preferred Federation method for mobile.
 
 # KMS
 
 - Fargate is also briefly explained and his section on KMS
-
 - Gotta watch those lectures. The concept of Customer Master Keys and Envelope Keys were definitely there
 
 # Various
 
 - Systems Manager Parameter Store - Know how it works and what it can do for you
-
 - know how to use S3 bucket policy to prevent uploads of unencrypted objects.
 
 # Whitepapers to Study
