@@ -34,6 +34,9 @@
 - Various Lambda configurations: VPC Integration, RAM, Concurrency Execution
 - Cloudwatch logs help debug lambda function output by default
 - Cloudwatch automatically monitors functions on your behalf, reporting metrics like total request rates. 
+- When a lambda alias ARN is used in the notification config & a new version of a lambda function is created, you need to update the Alias ARN pointing to the new function.
+- Avoid Recursion in Lambda functions to prevent 
+- Canary deployment preference shifts traffic in 2 intervals, x amount in the first interval and the remaining traffic in the 2nd interval of time
 
 
 # CloudFormation 
@@ -106,6 +109,7 @@
 # Cloudwatch, Cloudtrail and AWS Config
 
 - What can trigger an alarm, metric or log?
+- If you set an alarm on a high-resolution metric, you can specify a 10 or 30 seconds period or a regular alarm with a period of any multiple of 60 seconds
 
 # API Gateway
 
@@ -127,10 +131,15 @@
 - Fargate is also briefly explained and his section on KMS
 - Gotta watch those lectures. The concept of Customer Master Keys and Envelope Keys were definitely there
 
+# IAM 
+
+- To assume a role, an application calls the AWS STS AssumeRole API operation and passes the ARN of the role to use. 
+
 # Various
 
 - Systems Manager Parameter Store - Know how it works and what it can do for you
 - know how to use S3 bucket policy to prevent uploads of unencrypted objects.
+
 
 # Whitepapers to Study
 
