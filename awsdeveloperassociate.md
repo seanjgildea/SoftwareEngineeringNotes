@@ -37,6 +37,7 @@
 - When a lambda alias ARN is used in the notification config & a new version of a lambda function is created, you need to update the Alias ARN pointing to the new function.
 - Avoid Recursion in Lambda functions to prevent 
 - Canary deployment preference shifts traffic in 2 intervals, x amount in the first interval and the remaining traffic in the 2nd interval of time
+- Lambda@Edge is an extension that lets you execute functions that customize the content that CloudFront delivers
 
 
 # CloudFormation 
@@ -77,14 +78,17 @@
   - Write through: Update cache whenever change to db. Data never stale but cache penalty
 - DynamoDB has a TTL attribute to define when items in a table expire / auto deleted
 - DynamoDB GSI and LSI (including its RCU and WCU relationship with the base table)
+- DynamoDB offers fully managed Encryption at rest
 
-# CodePipeline, CodeDeploy, CodeCommit, CodeBuild
+# CodePipeline, CodeDeploy, CodeCommit, CodeBuild, Codestar
 
+- Codedeploy uses appspec files for configuration (specifies lambda function version to deploy)
 - CodePipeline creates an S3 artifact bucket and default SSE-KMS keys. Data is encrypted at rest. 
 - Client-side encryption with KMS and You needed to know the sequence
 - Plenty of questions on the different services. Definitely know what role each service plays
 - Know SAM and examples of build and deploy scripts
 - create-project / update-project commands run a build with a source location of the build
+- Codestar is used for creating, managing and working with software development projects using templates. 
 
 # X-Ray
 
@@ -137,10 +141,11 @@
 
 - To assume a role, an application calls the AWS STS AssumeRole API operation and passes the ARN of the role to use. 
 
-# Various
+# Various / Memcached / Redis
 
 - Systems Manager Parameter Store - Know how it works and what it can do for you
 - know how to use S3 bucket policy to prevent uploads of unencrypted objects.
+- Use Redis for Gaming Leaderboards due to its "sorted sets"
 
 
 # Whitepapers to Study
