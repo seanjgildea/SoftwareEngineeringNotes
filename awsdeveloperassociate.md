@@ -75,11 +75,12 @@
 - Elasticache: Lazy Loading vs Write Through
   - Cache miss penalty: Lazy Loading: Initial request, query db, write to cache
   - Write through: Update cache whenever change to db. Data never stale but cache penalty
-- 
+- DynamoDB has a TTL attribute to define when items in a table expire / auto deleted
 - DynamoDB GSI and LSI (including its RCU and WCU relationship with the base table)
 
 # CodePipeline, CodeDeploy, CodeCommit, CodeBuild
 
+- CodePipeline creates an S3 artifact bucket and default SSE-KMS keys. Data is encrypted at rest. 
 - Client-side encryption with KMS and You needed to know the sequence
 - Plenty of questions on the different services. Definitely know what role each service plays
 - Know SAM and examples of build and deploy scripts
@@ -128,8 +129,9 @@
 
 # KMS
 
-- Fargate is also briefly explained and his section on KMS
-- Gotta watch those lectures. The concept of Customer Master Keys and Envelope Keys were definitely there
+### Envelope Encryption
+- unencrypted data is encrypted using plaintext Data key. Data key is further encrypted using plaintext master key. Plaintext master key is securely stored in KMS and known as Customer Master Keys
+- 
 
 # IAM 
 
