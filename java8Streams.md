@@ -1,4 +1,17 @@
-# Quick examples of Java 8 Streams
+# Java 8 Snippets
+
+``` 
+public String getFieldValue() {
+                FieldObject object = this.fieldObject;
+                return object != null ? object.getValue() : "";
+            }
+```
+
+```
+private static String getAttractionValue(String nodeAttractionValue) {
+        return (( nodeAttractionValue == null) ? "N/A" : nodeAttractionValue );
+    }
+```
 
 ## Average of squares of int array
 
