@@ -22,3 +22,12 @@
   - Spot Instances: up to 90% discount compared to On-Demand. 2 minute notification warning when spot goes above bid. resilient workloads, big data
   - Dedicated Instances: no other customers share your server. no con
   - Dedicated Hosts: book entire physical server - 3 yr reservation period, more expensive. BYOL - strong regulatory needs. 
+- EC2 Instance Types
+  - R - Ram ( in memory cache )
+  - C - CPU ( compute / db )
+  - M - Medium ( general / webapp )
+  - I - I/O ( instance storage / databases ) 
+  - G - GPU ( video rendering / machine learning )
+  - T2/T3 burstable - credit based
+  - T2/T3 unlimited 
+- 
