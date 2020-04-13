@@ -30,4 +30,12 @@
   - G - GPU ( video rendering / machine learning )
   - T2/T3 burstable - credit based
   - T2/T3 unlimited 
-- 
+- Creating AMI's from existing EC2 Instances
+- Cross Account AMI Copy
+  - Edit AMI properties - public / private ( certain AWS acct #s )
+  - Copied AMI's give ownership to the copier
+  - You can copy an AMI from a running EC2 instance as a workaround
+- Elastic IP ( doesnt change when you stop/start instance )
+  - Costs money if you are not using the instance
+  - Useful to mask the failure of an instance by rapidly remapping the address to another instance in your acct
+  - Max of 5 Elastic IP's
