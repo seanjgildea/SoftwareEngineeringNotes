@@ -39,3 +39,6 @@
   - Costs money if you are not using the instance
   - Useful to mask the failure of an instance by rapidly remapping the address to another instance in your acct
   - Max of 5 Elastic IP's
+- Cloudwatch Metrics
+  - Basic (default) - 5 minute interval
+  - Detailed ( paid ) - 1 minute interval
