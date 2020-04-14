@@ -1,5 +1,6 @@
 # SysOps Associate Exam
 
+# Steffan Maarak Section 3
 
 ## EC2 
 - Changed the Instance type of an EC2 and did not lose any data, watched the memory increase via CLI
