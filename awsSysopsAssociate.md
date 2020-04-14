@@ -54,3 +54,25 @@
     - System Status - Check underlying Hardware
   - Disk: Read/Write
   - RAM ( NOT INCLUDED IN AWS EC2 metrics )
+- Detailed Monitoring
+  - Metrics at 1 minute frequency
+  - Additional costs
+- Custom Cloudwatch Metrics Walkthrough
+  - Requires installing some scripts via YUM on Amazon Linux 2 AMI
+  - Download / install monitoring ZIP file via CURL
+  - Unzip file to folder and use IAM Role permissions to access 
+  - Create EC2 instance role creates
+  - CloudwatchFullAccess choose and give a name
+  - Right click on instance, attach Role above
+  - Install crontab
+  - Wait 15 min for RAM to be pushed
+  - Go to cloudwatch > Metrics > Linux System > InstanceID > MemoryUtilization
+- By default, no logs from EC2 to Cloudwatch
+  - Run the Cloudwatch Logs Agent on your EC2 Instance
+  - Make sure IAM permissions are correct
+  - Configure IAM Role - needs "logs: *" 
+  - sudo yum install -y awslogs on EC2 instance
+  - edit the awslogs.conf and awscli.conf ( set the region )
+  - sudo service awslogs start
+  - sudo systemctl start awslogsd
+  - sudo systemtcl enable awslogsd.service
