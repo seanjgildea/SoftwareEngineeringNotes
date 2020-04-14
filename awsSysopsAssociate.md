@@ -39,6 +39,18 @@
   - Costs money if you are not using the instance
   - Useful to mask the failure of an instance by rapidly remapping the address to another instance in your acct
   - Max of 5 Elastic IP's
-- Cloudwatch Metrics
+- AWS Provided Cloudwatch Metrics
   - Basic (default) - 5 minute interval
   - Detailed ( paid ) - 1 minute interval
+- Cloudwatch Custom metrics
+  - Default basic resolution 1 min
+  - High resolution up to 1 second
+  - Includes RAM monitoring
+- EC2 included Metrics
+  - CPU
+  - Network
+  - Status Check
+    - Instance Status - EC2 VM
+    - System Status - Check underlying Hardware
+  - Disk: Read/Write
+  - RAM ( NOT INCLUDED IN AWS EC2 metrics )
