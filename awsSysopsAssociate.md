@@ -1,7 +1,5 @@
 # SysOps Associate Exam
 
-# Steffan Maarak Section 3
-
 ## EC2 
 - Changed the Instance type of an EC2 and did not lose any data, watched the memory increase via CLI
 - Placement Groups ( Cluster, Spread, Partition )
@@ -77,3 +75,7 @@
   - sudo service awslogs start
   - sudo systemctl start awslogsd
   - sudo systemtcl enable awslogsd.service
+
+## Systems Manager / Opswork
+
+- SSM Agent needs to be installed on the EC2 instance
