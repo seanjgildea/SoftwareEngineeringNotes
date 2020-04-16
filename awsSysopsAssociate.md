@@ -79,3 +79,13 @@
 ## Systems Manager / Opswork
 
 - SSM Agent needs to be installed on the EC2 instance
+- OpsWorks for Chef/Puppet
+- Run Command lets you execute scripts on your EC2 instances
+- EC2 instances need the SSMAgent IAM Role in order to be seen in SSM
+
+## Load Balancers / Target Groups 
+
+- High available load balancer = EC2 instances in separate AZs
+- To make your Apache EC2 instances only accessible from your ALB, specify the source as sg-xxx-my-load-balancer in inbound rules
+- Stickiness: Can create imbalances in ALBs ( popular exam question, one has 80% load, one has 20% load )
+  - Stickiness can be enabled in the target group attributes with a duration between 1 second - 7 days long
