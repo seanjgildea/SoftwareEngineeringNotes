@@ -89,3 +89,27 @@
 - To make your Apache EC2 instances only accessible from your ALB, specify the source as sg-xxx-my-load-balancer in inbound rules
 - Stickiness: Can create imbalances in ALBs ( popular exam question, one has 80% load, one has 20% load )
   - Stickiness can be enabled in the target group attributes with a duration between 1 second - 7 days long
+- ALB's do not support static IP but has a fixed DNS
+- NLB's DO support static IPs
+- How do you give an ALB a fixed IP? You chain a NLB in front of it
+- ELBs scale gradually to traffic but can crash to 10x traffic
+- You must open a support ticket with AWS to "pre-warm" your ELB if you expect a drastic increase in traffic 36 hours in advance
+- Common Auth Codes
+  - 401: client unauthorized
+  - 403: forbidden
+  - 460: Client closed connection
+  - 463: X-Forwarded for header
+- You can enable an old ELBSecurityPolicy to allow older browsers for SSL access
+- Load Balancer Common Troubleshooting
+  - Check Security Groups
+  - Check Health Checks
+  - Sticky Sessions bring imbalance
+  - For Multi-AZ, make sure cross zone balancing is enabled
+  - Use Internal load balancer for private apps that dont need public access
+  - Enable deletion protection to prevent your Load balancer from being deleted
+- Load Balancer Access Logs are stored in S3
+  - Contain the Time, IP, Latencies, Request paths, Server response and Trace Id
+- Request Tracing: custom header 'X-Amzn-Trace-Id'
+- ASG works hand-in-hand with the load balancer to manage instances that are online
+- ASG scaling policies can be on CPU, Network, Custom Metrics, or a schedule. 
+- 
