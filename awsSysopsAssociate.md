@@ -112,4 +112,9 @@
 - Request Tracing: custom header 'X-Amzn-Trace-Id'
 - ASG works hand-in-hand with the load balancer to manage instances that are online
 - ASG scaling policies can be on CPU, Network, Custom Metrics, or a schedule. 
-- 
+- AZRebalance: If you suspend the Terminate process, the ASG can grow up to 10% in size
+- For High Availability you need 2 instances running across 2 AZ in your ASG as multi AZ ASG 
+- EC2s have health checks as well as ELBs have health checks
+- ASGs will not reboot unhealthy hosts for you
+- set-instance-health / 
+- Cloudwatch metrics for ASG are monitored every 1 minute
